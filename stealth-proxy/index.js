@@ -17,7 +17,7 @@ const crypto = require('crypto');
 const PORT = parseInt(process.env.PORT || '3011');
 const CHALLENGE_URL = process.env.CHALLENGE_URL || 'https://cursor.com/cn/docs';
 const REFRESH_INTERVAL = parseInt(process.env.REFRESH_INTERVAL || '3000000'); // 50 分钟
-const CHALLENGE_WAIT = parseInt(process.env.CHALLENGE_WAIT || '50000'); // challenge 最长等待时间
+const CHALLENGE_WAIT = parseInt(process.env.CHALLENGE_WAIT || '55000'); // challenge 最长等待时间
 
 let browser, context, challengePage, workerPage;
 let ready = false;
